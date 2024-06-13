@@ -11,6 +11,13 @@
 	"files.associations": { // ファイルと言語の関連付けを変更
 	},
 	"files.exclude": { // エクスプローラーから非表示にするファイル
+		// python
+		"__pycache__": true,
+		".mypy_cache": true,
+		".pytest_cache": true,
+		".venv": true,
+		"requirements*.lock": true,
+		"poetry.lock": true,
 	},
 	// explorer
 	"explorer.compactFolders": false, //ディレクトリの中に１つしかディレクトリがない場合でも省略表示にしない
@@ -56,10 +63,17 @@
 	"git.autofetch": true,
 	"git.openRepositoryInParentFolders": "always",
 	"git.suggestSmartCommit": true,
+	"git.branchProtection": [
+		"main",
+		"develop",
+	],
+	"git.branchPrefix": "feature/",
 	// config files (json, yaml)
 	"json.validate.enable": true,
 	"diffEditor.ignoreTrimWhitespace": true,
+	//
 	// ** extensions settings **
+	//
 	// markdown
 	"markdown.extension.theming.decoration.renderTrailingSpace": true,
 	// licenser: license for My Programs
@@ -76,6 +90,38 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode" // 既定のフォーマッター
 	},
 	"[yaml]": {},
-	// python
-	"[python]": {},
+	"[toml]": {},
+	"[python]": {
+		// python settings
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "ms-python.black-formatter",
+	},
+	// linter
+	"pylint.args": [], // pylint
+	"ruff.organizeImports": false, // ruff
+	"python.analysis.typeCheckingMode": "strict", //mypy
+	// formatter
+	"black-formatter.args": [
+		"--line-length=120"
+	],
+	"isort.args": [
+		"--profile",
+		"black"
+	],
+	// pytest
+	"python.testing.pytestEnabled": true,
+	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+	"python.testing.pytestArgs": [
+		"--cov=src",
+		"--cov-report",
+		"xml"
+	],
+	"coverage-gutters.showGutterCoverage": true,
+	"coverage-gutters.showLineCoverage": true,
+	"coverage-gutters.showRulerCoverage": true,
+	// conventionalCommits
+	"conventionalCommits.promptScopes": false,
+	"conventionalCommits.promptFooter": false,
+	"conventionalCommits.promptBody": false,
+	"conventionalCommits.gitmoji": false,
 }
