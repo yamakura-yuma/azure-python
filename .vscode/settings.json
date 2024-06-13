@@ -1,102 +1,81 @@
 {
 	// window
 	"window.title": "${activeEditorMedium}${separator}${rootName}",
-
 	// file saves and encording
 	"files.eol": "\n",
-    "files.insertFinalNewline": true, // ファイルの末尾を改行で終わらせる
+	"files.insertFinalNewline": true, // ファイルの末尾を改行で終わらせる
 	"files.trimFinalNewlines": true, // ファイルの最終行以降の空行を削除
 	"files.trimTrailingWhitespace": true, // ファイルの空白を削除
-    "files.autoGuessEncoding": true, // ファイルの自動エンコードを実施
+	"files.autoGuessEncoding": true, // ファイルの自動エンコードを実施
 	"files.autoSave": "onWindowChange",
-    "files.associations": { // ファイルと言語の関連付けを変更
-    },
-    "files.exclude": { // エクスプローラーから非表示にするファイル
-    },
-
+	"files.associations": { // ファイルと言語の関連付けを変更
+	},
+	"files.exclude": { // エクスプローラーから非表示にするファイル
+	},
 	// explorer
 	"explorer.compactFolders": false, //ディレクトリの中に１つしかディレクトリがない場合でも省略表示にしない
 	"explorer.confirmDelete": false,
 	"explorer.incrementalNaming": "smart",
-
 	// workbench common
-    "workbench.startupEditor": "readme", // Welcome PageとしてREADMEを表示
+	"workbench.startupEditor": "readme", // Welcome PageとしてREADMEを表示
 	"workbench.iconTheme": "vscode-icons", //拡張機能vscode-iconsを有効化
-    "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
-    "workbench.editor.tabSizing": "shrink", // タブの表示設定
-
+	"workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+	"workbench.editor.tabSizing": "shrink", // タブの表示設定
 	// editor settings
 	"editor.acceptSuggestionOnEnter": "off", // 入力補完のサジェストにEnterを利用するか
 	"editor.autoIndent": "advanced",
 	"editor.formatOnSave": true, // 保存時に自動でフォーマット
 	"editor.formatOnType": true, // 入力した行を自動でフォーマット
 	"editor.formatOnPaste": true,
-    "editor.insertSpaces": false,
-    "editor.fontSize": 14, // フォントサイズを変更
-    "editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.fontSize": 14, // フォントサイズを変更
+	"editor.tabSize": 4,
 	"editor.unicodeHighlight.includeComments": true,
-	"editor.dragAndDrop": false,	// ドラッグアンドドロップで選択範囲のテキストを移動できるようにする
+	"editor.dragAndDrop": false, // ドラッグアンドドロップで選択範囲のテキストを移動できるようにする
 	"editor.detectIndentation": false,
-    "editor.minimap.enabled": false, // ミニマップを非表示にする
-    "editor.suggestSelection": "recentlyUsed", // サジェスト一覧の初期表示項目設定
-    "editor.fontFamily": "'Fira Code', Hasklig, Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": true, // 合字を有効化
-    "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
-    "editor.cursorSmoothCaretAnimation": "on", // カーソルの点滅をアニメーション表示する
-    "editor.cursorStyle": "block-outline", // カーソルの外観をブロックに変更
-    "editor.bracketPairColorization.enabled": true, // 括弧の対応を色付ける
+	"editor.minimap.enabled": false, // ミニマップを非表示にする
+	"editor.suggestSelection": "recentlyUsed", // サジェスト一覧の初期表示項目設定
+	"editor.fontFamily": "'Fira Code', Hasklig, Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true, // 合字を有効化
+	"editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
+	"editor.cursorSmoothCaretAnimation": "on", // カーソルの点滅をアニメーション表示する
+	"editor.cursorStyle": "block-outline", // カーソルの外観をブロックに変更
+	"editor.bracketPairColorization.enabled": true, // 括弧の対応を色付ける
 	"editor.showFoldingControls": "always",
 	"editor.wordWrap": "on", // エディターの幅で折り返し
-    "editor.renderControlCharacters": true, // 制御文字を表示する
+	"editor.renderControlCharacters": true, // 制御文字を表示する
 	"editor.renderWhitespace": "all",
-    "editor.renderLineHighlight": "all", // 選択行の行番号をハイライトする
-
+	"editor.renderLineHighlight": "all", // 選択行の行番号をハイライトする
 	"breadcrumbs.enabled": true, // ファイルのパンくずリストを表示する // https://qiita.com/12345/items/da13fc34e25b51de52c5
-
 	// terminal
 	"terminal.integrated.confirmOnExit": "always",
 	"terminal.integrated.copyOnSelection": true,
-
 	// debug
 	"debug.inlineValues": "on",
-
 	// git settings
-    "git.autofetch": true,
-    "git.openRepositoryInParentFolders": "always",
-    "git.suggestSmartCommit": true,
-
-    // config files (json, yaml)
-    "json.validate.enable": true,
-    "diffEditor.ignoreTrimWhitespace": true,
-
-    // ** extensions settings **
-    // markdown
-    "markdown.extension.theming.decoration.renderTrailingSpace": true,
-
+	"git.autofetch": true,
+	"git.openRepositoryInParentFolders": "always",
+	"git.suggestSmartCommit": true,
+	// config files (json, yaml)
+	"json.validate.enable": true,
+	"diffEditor.ignoreTrimWhitespace": true,
+	// ** extensions settings **
+	// markdown
+	"markdown.extension.theming.decoration.renderTrailingSpace": true,
 	// licenser: license for My Programs
-    "licenser.license": "MIT",
-    "licenser.author": "yamakura-yuma",
-
-    "[markdown]": {
-    },
-
+	"licenser.license": "MIT",
+	"licenser.author": "yamakura-yuma",
+	"[markdown]": {},
 	"[csv]": {
 		"editor.wordWrap": "off" // 行の折り返し方法を制御します。
 	},
-
 	"[tsv]": {
 		"editor.wordWrap": "off" // 行の折り返し方法を制御します。
 	},
-
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode" // 既定のフォーマッター
 	},
-
-	"[yaml]": {
-	},
-
+	"[yaml]": {},
 	// python
-	"[python]": {
-	},
-
+	"[python]": {},
 }

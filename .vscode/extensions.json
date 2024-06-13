@@ -1,24 +1,25 @@
 {
-    "recommendations": [
-        "ms-vscode-remote.vscode-remote-extensionpack",
-        "mhutchie.git-graph",
-        "github.copilot",
-        "github.codespaces",
-        "ms-python.python",
-        "mgesbert.python-path",
-        "njqdev.vscode-python-typehint",
-        "oderwat.indent-rainbow",
-        "ms-python.pylint",
-        "shardulm94.trailing-spaces",
-        "yzhang.markdown-all-in-one",
-        "christian-kohler.path-intellisense",
-        "bierner.markdown-preview-github-styles",
+	"recommendations": [
+		"ms-vscode-remote.vscode-remote-extensionpack",
+		"mhutchie.git-graph",
+		"github.copilot",
+		"github.codespaces",
+		"ms-python.python",
+		"mgesbert.python-path",
+		"njqdev.vscode-python-typehint",
+		"oderwat.indent-rainbow",
+		"ms-python.pylint",
+		"shardulm94.trailing-spaces",
+		"yzhang.markdown-all-in-one",
+		"christian-kohler.path-intellisense",
+		"bierner.markdown-preview-github-styles",
 		"esbenp.prettier-vscode",
 		"mosapride.zenkaku",
 		"eamodio.gitlens",
 		"streetsidesoftware.code-spell-checker",
 		"ms-ceintl.vscode-language-pack-ja",
 		"pkief.material-icon-theme",
-		"formulahendry.auto-complete-tag"
-    ]
+		"formulahendry.auto-complete-tag",
+		"ms-azuretools.vscode-docker",
+	]
 }

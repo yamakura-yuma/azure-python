@@ -3,26 +3,73 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	// "features": {},
-
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// 👇 Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "",
-
 	// 👇 Configure tool-specific properties.
 	"customizations": {
-        "vscode": {
-            "extensions":["ms-python.python", "njpwerner.autodocstring"]
-            }
-		},
-		"features": {
-			"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {}
+		"vscode": {
+			"extensions": [
+				"ms-vscode-remote.vscode-remote-extensionpack",
+				"mhutchie.git-graph",
+				"github.copilot",
+				"github.codespaces",
+				"ms-python.python",
+				"mgesbert.python-path",
+				"njqdev.vscode-python-typehint",
+				"oderwat.indent-rainbow",
+				"ms-python.pylint",
+				"shardulm94.trailing-spaces",
+				"yzhang.markdown-all-in-one",
+				"christian-kohler.path-intellisense",
+				"bierner.markdown-preview-github-styles",
+				"esbenp.prettier-vscode",
+				"mosapride.zenkaku",
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"ms-ceintl.vscode-language-pack-ja",
+				"pkief.material-icon-theme",
+				"formulahendry.auto-complete-tag",
+				"ms-azuretools.vscode-docker",
+			]
 		}
-
+	},
+	"features": {
+		// AWS
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		// Azure
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {
+			"version": "latest"
+		},
+		// Github
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"version": "latest"
+		},
+		// Python
+		"ghcr.io/devcontainers-contrib/features/poetry": {
+			"version": "latest"
+		},
+		// Kubernetes
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+			"version": "latest"
+		},
+		// Terraform
+		"ghcr.io/devcontainers/features/terraform:1": {
+			"version": "latest"
+		},
+		// bash for json and yaml tools
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {
+			"version": "latest"
+		}
+	}
 	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

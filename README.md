@@ -5,8 +5,6 @@
 
 # 使用技術
 
-<!-- https://shields.io/badges -->
-
 <table>
 	<!-- ヘッダ -->
 	<tr>
