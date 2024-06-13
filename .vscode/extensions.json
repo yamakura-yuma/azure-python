@@ -1,31 +1,43 @@
 {
 	"recommendations": [
+		// Remote-Development
 		"ms-vscode-remote.vscode-remote-extensionpack",
+		// Git/Github
 		"mhutchie.git-graph",
 		"github.copilot",
 		"github.codespaces",
+		"eamodio.gitlens",
+		"vivaxy.vscode-conventional-commits",
+		// python
 		"ms-python.python",
 		"mgesbert.python-path",
 		"njqdev.vscode-python-typehint",
-		"oderwat.indent-rainbow",
 		"ms-python.pylint",
-		"shardulm94.trailing-spaces",
+		"ms-python.black-formatter",
+		// markdown
 		"yzhang.markdown-all-in-one",
-		"christian-kohler.path-intellisense",
 		"bierner.markdown-preview-github-styles",
+		// docker
+		"ms-azuretools.vscode-docker",
+		// AWS
+		"boto3typed.boto3-ide",
+		// Azure
+		"ms-azuretools.vscode-bicep",
+		"ms-vscode.azurecli", // or replace to ms-vscode.vscode-node-azure-pack
+		// IaC
+		"hashicorp.terraform",
+		// formatter
 		"esbenp.prettier-vscode",
-		"mosapride.zenkaku",
-		"eamodio.gitlens",
+		// common
+		"oderwat.indent-rainbow",
+		"mechatroner.rainbow-csv",
+		"shardulm94.trailing-spaces",
+		"christian-kohler.path-intellisense",
 		"streetsidesoftware.code-spell-checker",
 		"ms-ceintl.vscode-language-pack-ja",
 		"pkief.material-icon-theme",
 		"formulahendry.auto-complete-tag",
-		"ms-azuretools.vscode-docker",
 		"tamasfe.even-better-toml",
-		"ms-python.black-formatter",
-		"vivaxy.vscode-conventional-commits",
 		"mushan.vscode-paste-image",
-		"boto3typed.boto3-ide",
-		"hashicorp.terraform",
 	]
 }
