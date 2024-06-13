@@ -34,6 +34,7 @@
 				"pkief.material-icon-theme",
 				"formulahendry.auto-complete-tag",
 				"ms-azuretools.vscode-docker",
+				"tamasfe.even-better-toml"
 			]
 		}
 	},

@@ -81,6 +81,6 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode" // 既定のフォーマッター
 	},
 	"[yaml]": {},
-	// python
+	"[toml]": {},
 	"[python]": {},
 }
