@@ -12,8 +12,7 @@
 		"ms-python.python",
 		"mgesbert.python-path",
 		"njqdev.vscode-python-typehint",
-		"ms-python.pylint",
-		"ms-python.black-formatter",
+		"charliermarsh.ruff",
 		// markdown
 		"yzhang.markdown-all-in-one",
 		"bierner.markdown-preview-github-styles",
