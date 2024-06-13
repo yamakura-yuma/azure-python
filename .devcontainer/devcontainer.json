@@ -34,7 +34,12 @@
 				"pkief.material-icon-theme",
 				"formulahendry.auto-complete-tag",
 				"ms-azuretools.vscode-docker",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+				"ms-python.black-formatter",
+				"vivaxy.vscode-conventional-commits",
+				"mushan.vscode-paste-image",
+				"Boto3typed.boto3-ide",
+				"HashiCorp.terraform"
 			]
 		}
 	},

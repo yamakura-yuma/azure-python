@@ -22,5 +22,10 @@
 		"formulahendry.auto-complete-tag",
 		"ms-azuretools.vscode-docker",
 		"tamasfe.even-better-toml",
+		"ms-python.black-formatter",
+		"vivaxy.vscode-conventional-commits",
+		"mushan.vscode-paste-image",
+		"boto3typed.boto3-ide",
+		"hashicorp.terraform",
 	]
 }
