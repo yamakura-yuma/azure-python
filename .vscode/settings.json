@@ -60,6 +60,7 @@
 		"main",
 		"develop",
 	],
+	"git.branchPrefix": "feature/",
 	// config files (json, yaml)
 	"json.validate.enable": true,
 	"diffEditor.ignoreTrimWhitespace": true,
