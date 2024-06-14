@@ -32,13 +32,15 @@ target-version = "py311"
 
 [lint]
 select = [
-    "E", # pycodestyle errors
-    "F", # Pyflakes
-    # "W", # pycodestyle warnings
-    "I", # isort. import module sorting
-    "D", # pydocstyle
-    "B", # flake8-bugbear
-    "N", # pep8-naming rules
+    "E",  # pycodestyle errors
+    "F",  # Pyflakes
+    "W",  # pycodestyle warnings
+    "I",  # isort. import module sorting
+    "B",  # flake8-bugbear
+    "PL", # pylint
+    "N",  # pep8-naming rules
+    "UP", # pyupgrade, 新しいpythonバージョンでの記述を教えてくれる
+    "D",  # pydocstyle
 ]
 ignore = [
     "E501", # 79文字以下のルールだが短すぎるし守られていないので除外
