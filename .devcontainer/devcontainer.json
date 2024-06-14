@@ -21,11 +21,12 @@
 				"github.codespaces",
 				"eamodio.gitlens",
 				"vivaxy.vscode-conventional-commits",
-				// python
-				"ms-python.python",
-				"mgesbert.python-path",
-				"njqdev.vscode-python-typehint",
-				"charliermarsh.ruff",
+                // python
+                "ms-python.python",
+                "mgesbert.python-path",
+                "charliermarsh.ruff",
+                "ms-python.mypy-type-checker",
+                "njqdev.vscode-python-typehint",
 				// markdown
 				"yzhang.markdown-all-in-one",
 				"bierner.markdown-preview-github-styles",
