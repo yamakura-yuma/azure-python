@@ -1,4 +1,4 @@
-# azure-python
+# クラウド開発環境を整備するためのお試しリポジトリ
 
 - [azure-python](#azure-python)
 - [使用技術](#使用技術)
