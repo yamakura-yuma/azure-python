@@ -35,3 +35,29 @@ act pull_request
 ```bash
 act schedule
 ```
+
+# docker_build_push_to_ghcrio
+
+- requirement
+  - gh
+  - docker
+  - GithubのSettings>Actions>GeneralでWorkflow permissionsにwrite権限を与えておく
+
+- preparation
+  - login with gh
+    ```bash
+    gh auth login
+    ```
+  - login with docker to ghcr.io
+    ```bash
+    echo $GITHUB_TOKEN_ACTIONS | docker login ghcr.io \
+        -u $(curl -sS -H "Authorization: token $GITHUB_TOKEN_ACTIONS" https://api.github.com/user | jq -r .login) \
+        --password-stdin
+    ```
+- actの実行
+    ```bash
+    act -j docker_build_push_ghcrio \
+        -s GITHUB_TOKEN=$GITHUB_TOKEN_ACTIONS \
+        --var GITHUB_USERNAME=$(curl -sS -H "Authorization: token $GITHUB_TOKEN_ACTIONS" https://api.github.com/user | jq -r .login) \
+        --var REPOSITORY_NAME=$(gh repo view --json name -q '.name')
+    ```
