@@ -24,7 +24,7 @@ jobs:
           echo "is  github.actor: ${{ github.actor == 'nektos/act'}}"
 
       - name: "ghcr.ioへのログイン(gha)"
-        if: ${{ github.actor != 'nektos/act' }}
+        if: ${{ github.actor }} != 'nektos/act'
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
