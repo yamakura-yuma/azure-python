@@ -57,39 +57,23 @@
 	},
 	"features": {
 		// AWS
-		"ghcr.io/devcontainers/features/aws-cli:1": {
-			"version": "latest"
-		},
+		"ghcr.io/devcontainers/features/aws-cli:1": {"version": "latest"},
 		// Azure
-		"ghcr.io/devcontainers/features/azure-cli:1": {
-			"version": "latest"
-		},
-		"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {
-			"version": "latest"
-		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {"version": "latest"},
+		"ghcr.io/rchaganti/vsc-devcontainer-features/azurebicep:1": {"version": "latest"},
 		// Github
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"version": "latest"
-		},
-        "ghcr.io/devcontainers-contrib/features/act:1" {
-            "version": "latest"
-        },
+		"ghcr.io/devcontainers/features/github-cli:1": {"version": "latest"},
+        "ghcr.io/devcontainers-contrib/features/act:1": {"version": "latest"},
 		// Python
-		"ghcr.io/devcontainers-contrib/features/poetry": {
-			"version": "latest"
-		},
+		"ghcr.io/devcontainers-contrib/features/poetry": {"version": "latest"},
 		// Kubernetes
-		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
-			"version": "latest"
-		},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {"version": "latest"},
 		// Terraform
-		"ghcr.io/devcontainers/features/terraform:1": {
-			"version": "latest"
-		},
+		"ghcr.io/devcontainers/features/terraform:1": {"version": "latest"},
 		// bash for json and yaml tools
-		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {
-			"version": "latest"
-		}
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {"version": "latest"},
+        // Docker
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {"version": "latest"},
 	},
 	"postAttachCommand": ".devcontainer/post-attach.sh",
 }
