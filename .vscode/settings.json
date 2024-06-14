@@ -34,7 +34,7 @@
 	"editor.formatOnSave": true, // 保存時に自動でフォーマット
 	"editor.formatOnType": true, // 入力した行を自動でフォーマット
 	"editor.formatOnPaste": true,
-	"editor.insertSpaces": false,
+	"editor.insertSpaces": true,
 	"editor.fontSize": 14, // フォントサイズを変更
 	"editor.tabSize": 4,
 	"editor.unicodeHighlight.includeComments": true,
