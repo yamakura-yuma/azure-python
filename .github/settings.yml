@@ -3,7 +3,7 @@ repository:
   name: cloud-dev-env
   description: devcontainerでクラウド(Azure, AWS)上で動作する基盤アプリ(python)の開発環境
   homepage: https://github.com/apps/settings
-  topics: azure, aws, python, poetry
+  topics: azure, aws, python, poetry, microsoft-graph
   has_wiki: false
   default_branch: main
   allow_squash_merge: true

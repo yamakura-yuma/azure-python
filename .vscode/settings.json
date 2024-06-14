@@ -34,7 +34,7 @@
 	"editor.formatOnSave": true, // 保存時に自動でフォーマット
 	"editor.formatOnType": true, // 入力した行を自動でフォーマット
 	"editor.formatOnPaste": true,
-	"editor.insertSpaces": false,
+	"editor.insertSpaces": true,
 	"editor.fontSize": 14, // フォントサイズを変更
 	"editor.tabSize": 4,
 	"editor.unicodeHighlight.includeComments": true,
@@ -94,20 +94,25 @@
 	"[python]": {
 		// python settings
 		"editor.tabSize": 4,
-		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnType": false,
+		"editor.formatOnSaveMode": "file",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.ruff": "always",
+			"source.organizeImports.ruff": "always"
+		},
 	},
-	// linter
-	"pylint.args": [], // pylint
-	"ruff.organizeImports": false, // ruff
-	"python.analysis.typeCheckingMode": "strict", //mypy
-	// formatter
-	"black-formatter.args": [
-		"--line-length=120"
-	],
-	"isort.args": [
-		"--profile",
-		"black"
-	],
+    // ruff
+	"ruff.enable": true, // ruffを有効にするか否か。
+	"ruff.lint.args": ["--config=ruff.toml"], // ruff checkに渡す追加のコマンドライン引数。設定ファイル(ruff.tomlなど)より優先される
+	"ruff.importStrategy": "fromEnvironment", // "fromEnvironment": 環境にruffがインストールされている場合は、そちらを使う。 "useBundled": Extension付属のruffを使う。
+	"ruff.codeAction.fixViolation": {"enable": true}, // Quick Fix を表示するか否か。
+	"ruff.codeAction.disableRuleComment": {"enable": true}, // # nopa でQuick Fixを無視するか否か
+	"ruff.showNotifications": "always", // ruffの通知を表示するか否か。 "off", "onError", "onWarning", "always"
+    // mypy
+    "mypy-type-checker.args": ["--config=mypy.toml"],
 	// pytest
 	"python.testing.pytestEnabled": true,
 	"python.testing.autoTestDiscoverOnSaveEnabled": true,
@@ -116,9 +121,6 @@
 		"--cov-report",
 		"xml"
 	],
-	"coverage-gutters.showGutterCoverage": true,
-	"coverage-gutters.showLineCoverage": true,
-	"coverage-gutters.showRulerCoverage": true,
 	// conventionalCommits
 	"conventionalCommits.promptScopes": false,
 	"conventionalCommits.promptFooter": false,

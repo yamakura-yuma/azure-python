@@ -11,9 +11,9 @@
 		// python
 		"ms-python.python",
 		"mgesbert.python-path",
+		"charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
 		"njqdev.vscode-python-typehint",
-		"ms-python.pylint",
-		"ms-python.black-formatter",
 		// markdown
 		"yzhang.markdown-all-in-one",
 		"bierner.markdown-preview-github-styles",

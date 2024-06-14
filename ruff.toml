@@ -1,0 +1,85 @@
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 120
+indent-width = 4
+
+# Assume Python 3.11
+target-version = "py311"
+
+[lint]
+select = [
+    "E",  # pycodestyle errors
+    "F",  # Pyflakes
+    "W",  # pycodestyle warnings
+    "I",  # isort. import module sorting
+    "B",  # flake8-bugbear
+    "PL", # pylint
+    "N",  # pep8-naming rules
+    "UP", # pyupgrade, 新しいpythonバージョンでの記述を教えてくれる
+    "D",  # pydocstyle
+]
+ignore = [
+    "E501", # 79文字以下のルールだが短すぎるし守られていないので除外
+    "D203", # D211との干渉を避ける
+    "D212", # D213との干渉を避ける
+    "D400", # 文末.を必須ではなくする(日本語で書きたい)
+    "D415", # 文末., !, ?を必須ではなくする(日本語で書きたい)
+]
+
+fixable = [
+    "E4", # import error
+    "E7", # colon, semicolon, type comparison, and naming rules
+    "E9", # io and syntax error
+    "F",
+    "I",
+]
+unfixable = [
+    "F401", # unused import
+]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[isort]
+combine-as-imports = true
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]
+split-on-trailing-comma = true
+
+[format]
+quote-style = "double"            # Like Black, use double quotes for strings.
+indent-style = "space"            # Like Black, indent with spaces, rather than tabs.
+skip-magic-trailing-comma = false # Like Black, respect magic trailing commas.
+line-ending = "auto"              # Like Black, automatically detect the appropriate line ending.
+
+[pydocstyle]
+convention = "google"
