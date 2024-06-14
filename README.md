@@ -53,3 +53,6 @@ _		<td> <!-- Env -->
 		</td>
 	</tr>
 </table>
+
+# Github Actionsの開発
+[act_memo.md](./.github/act_memo.md)
