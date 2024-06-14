@@ -74,6 +74,8 @@
 		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {"version": "latest"},
         // Docker
         "ghcr.io/devcontainers/features/docker-in-docker:2": {"version": "latest"},
+        // nodejs
+		"ghcr.io/devcontainers/features/node:1": {"version": "latest"}
 	},
 	"postAttachCommand": ".devcontainer/post-attach.sh",
 }

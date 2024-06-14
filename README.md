@@ -54,6 +54,5 @@ _		<td> <!-- Env -->
 	</tr>
 </table>
 
-# Github Actionの開発
-
-## `act`
+# Github Actionsの開発
+[act_memo.md](./.github/act_memo.md)
