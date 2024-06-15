@@ -2,11 +2,12 @@
     "name": "cloud-dev-env",
     "build": {
         "context": "../",
-        "dockerfile": "./.devcontainer/Dockerfile"
+        "dockerfile": "Dockerfile"
     },
     // "image": "ghcr.io/yamakura-yuma/cloud-dev-env/sample:latest",
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	// "features": {},
+
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// 👇 Use 'postCreateCommand' to run commands after the container is created.
