@@ -50,16 +50,15 @@ ARG PYTHON_VERSION=3.11
 ###
 ### use rye + uv
 ###
-SHELL [ "/bin/bash", "-o", "pipefail", "-c" ]
-RUN curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash && \
-    rye config --set-bool behavior.global-python=true && \
-    rye config --set-bool behavior.use-uv=true
 
-ENV RYE_HOME="/opt/rye"
+ENV RYE_HOME="${HOME}/.rye"
 ENV PATH="$RYE_HOME/shims:$PATH"
 
-COPY ./.python-version ./pyproject.toml ./requirements* ./
-RUN rye pin "$(cat .python-version)" && \
-    rye sync
-
-RUN chown -R vscode $RYE_HOME
+# SHELL [ "/bin/bash", "-o", "pipefail", "-c" ]
+RUN curl -sSf https://rye.astral.sh/get \
+    | RYE_INSTALL_OPTION="--yes" bash \
+    && chown -R vscode $RYE_HOME \
+    && rye config --set-bool behavior.global-python=true \
+    && rye config --set-bool behavior.use-uv=true \
+    && rye init \
+    && rye pin $PYTHON_VERSION
