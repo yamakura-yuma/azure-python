@@ -69,6 +69,8 @@
         "ghcr.io/devcontainers-contrib/features/act:1": {"version": "latest"},
 		// Python
 		"ghcr.io/devcontainers-contrib/features/poetry": {"version": "latest"},
+        "ghcr.io/schlich/devcontainer-features/rye:1": {"version": "latest"},
+        "ghcr.io/va-h/devcontainers-features/uv:1": {"version": "latest"},
 		// Kubernetes
 		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {"version": "latest"},
 		// Terraform
