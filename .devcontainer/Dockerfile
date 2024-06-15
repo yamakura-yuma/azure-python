@@ -28,7 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 # Python installation
 USER $USER
 ARG HOME="/home/$USER"
-ARG PYTHON_VERSION=3.11
+ARG PYTHON_VERSION=3.12
 # ARG PYTHON_VERSION=3.10
 
 ###
@@ -53,6 +53,7 @@ ARG PYTHON_VERSION=3.11
 
 ENV RYE_HOME="${HOME}/.rye"
 ENV PATH="$RYE_HOME/shims:$PATH"
+WORKDIR ${HOME}
 
 # SHELL [ "/bin/bash", "-o", "pipefail", "-c" ]
 RUN curl -sSf https://rye.astral.sh/get \
@@ -60,5 +61,4 @@ RUN curl -sSf https://rye.astral.sh/get \
     && chown -R vscode $RYE_HOME \
     && rye config --set-bool behavior.global-python=true \
     && rye config --set-bool behavior.use-uv=true \
-    && rye init \
     && rye pin $PYTHON_VERSION
